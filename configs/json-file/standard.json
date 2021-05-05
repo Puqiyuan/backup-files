@@ -1,0 +1,16 @@
+{
+"server":"jp-177.mxrou.com",
+"server_port":5105,
+"local_address":"127.0.0.1",
+"local_port":1080,
+"password":"FYuGaEtyS",
+"timeout":300,
+"udp_timeout":60,
+"method":"chacha20-ietf",
+"protocol":"auth_aes128_md5",
+"protocol_param":"58920:WMn3Zwfo",
+"obfs":"tls1.2_ticket_auth",
+"obfs_param":"ef53c58920.msn.microsoft.com",
+"fast_open":false,
+"workers":1
+}
