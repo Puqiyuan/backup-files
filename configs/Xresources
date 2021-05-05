@@ -1,0 +1,104 @@
+! -*- mode: Conf[Xdefaults];-*-
+!!! https://wiki.archlinux.org/index.php/X_resources
+!!! run 'xrdb -merge .Xresources' after change
+
+XTerm*loginShell: true
+
+!!!font and locale
+XTerm*faceName: Monospace
+XTerm*boldFont: Monospace
+!XTerm*boldFont: Noto Mono:style=Bold
+XTerm*faceSize: 10
+XTerm*faceSize1: 14
+XTerm*faceSize2: 16
+XTerm*faceSize3: 18
+XTerm*faceSize4: 20
+XTerm*faceSize5: 22
+XTerm*faceSize6: 24
+XTerm*antialias: false
+XTerm*faceNameDoublesize: Noto Sans Mono CJK SC
+
+! set 'cjkWidth' to true makes aptitude window messy.
+!XTerm*cjkWidth: true
+XTerm*locale: true
+XTerm*utf8: true
+XTerm*fontMenu*fontdefault*Label: Default
+XTerm*xftAntialias: false
+XTerm*selectToClipboard: true
+
+!!! make url selection better (seems not working)
+! http://www.debian-administration.org/article/66/Customizing_your_XTerm
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+!!!look and feel
+XTerm*termName: xterm-256color
+XTerm*ScrollBar: false
+XTerm*visualBell: false
+XTerm*fullscreen: never
+XTerm*borderLess: true
+XTerm*internalBorder: 0
+XTerm*externalBorder: 0
+XTerm*borderWidth: 0
+
+XTerm.vt100.translations: #override \
+  Ctrl <Key> minus: smaller-vt-font() \n\
+  Ctrl <Key> plus: larger-vt-font() \n
+
+XTerm*omitTranslation: fullscreen
+! disable alt-enter in XTerm, and enable it in emacs.
+XTerm*metaSendsEscape: true
+
+XTerm*allowSendEvents: True
+XTerm*allowTitleOps: True
+XTerm*sessionMgt: false
+
+Xcursor.size: 16
+
+! --- generated with 4bit Terminal Color Scheme Designer -----------------------
+! --- http://ciembor.github.com/4bit -------------------------------------------
+! --- special colors ---
+
+!!!*background: #0d1926
+!!!*background: #222222
+!!!*foreground: #d9e6f2
+
+!!!xterm*background: black
+xterm*background: #3a3a3a
+xterm*foreground: lightgray
+
+! --- standard colors ---
+
+! black
+*color0: #000000
+! bright_black
+*color8: #262626
+! red
+*color1: #b87a7a
+! bright_red
+*color9: #dbbdbd
+! green
+*color2: #7ab87a
+! bright_green
+*color10: #bddbbd
+! yellow
+*color3: #b8b87a
+! bright_yellow
+*color11: #dbdbbd
+! blue
+*color4: #7a7ab8
+! bright_blue
+*color12: #bdbddb
+! magenta
+*color5: #b87ab8
+! bright_magenta
+*color13: #dbbddb
+! cyan
+*color6: #7ab8b8
+! bright_cyan
+*color14: #bddbdb
+! white
+*color7: #d9d9d9
+! bright_white
+*color15: #ffffff
+
+! --- end of terminal colors section -------------------------------------------
