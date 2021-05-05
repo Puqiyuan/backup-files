@@ -4,7 +4,7 @@
 export DISPLAY=:0.0
 
 #Call qiv
-/usr/bin/qiv -m --vikeys $HOME/key_tools/crontab_rest/rest.jpeg &
+/usr/bin/qiv -m --vikeys $HOME/backup-files/key_tools/crontab_rest/rest.jpeg &
 
 #Time to display
 /usr/bin/sleep 180
